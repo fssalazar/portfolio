@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { profile } from "@/lib/data";
+import { ToptalBadge } from "./ToptalBadge";
 
 const container = {
   hidden: {},
@@ -89,7 +90,8 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <motion.div variants={item} className="relative">
+        <motion.div variants={item} className="relative flex flex-col items-center gap-10">
+          <ToptalBadge />
           <TerminalCard />
         </motion.div>
       </motion.div>
